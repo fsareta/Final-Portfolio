@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+  /*nav bar styling*/
+  nav {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    background: #7f3f8a;
+    padding: 10px 5px;
+    box-shadow: 0px 5px 0px #dedede;
+    border: 3px solid #333333;
+    border-radius: 12% 8% 5% 9%;
+  }
+  @media screen and (max-width: 1455px) {
+    nav {
+      display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+    height: 50%;
+    }
+  }
+  nav ul {
+    list-style: none;
+    text-align: center;
+   
+  }
+  nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: rgb(237, 199, 249);
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0 4px;
+    font-family: 'Short Stack', cursive;
+    font-size: 18px;
+    letter-spacing: 2px;
+    
+  }
+ 
+  nav ul li a:hover {
+    color: rgb(17, 12, 19);
+    transform: scale(1.2);
+    transition: all .3s ease-in-out;
+    font-weight: 700;
+  }
+  
+
+/*grid layout*/
+  .container {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 0.3fr 0.3fr 2.4fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". Header ."
+      ". Nav ."
+      ". Main .";
+
+  }
+  
+  .Header { grid-area: Header; }
+  
+  .Nav { grid-area: Nav; 
+ }
+ 
+  
+  .Main { grid-area: Main;
+   }
+  /*other*/
+
+  h1{
+    display: block;
+    width: 95%;
+    padding: 2%;
+    border: 20px;
+    border-radius: 45%;
+    background: #f2d2f9;
+    text-align: center;
+    font-family: 'Allura', cursive;
+    font-size: 120px;
+    color: rgb(59, 1, 84);
+    border: 3px solid #333333;
+    border-radius: 12% 15% 19% 14% ;
+    box-shadow: 0px 5px 0px #dedede;
+    letter-spacing: 10px;
+
+  }
+  h2{
+    text-align: center;
+    text-decoration: underline;
+    color:rgb(237, 199, 249);
+    text-shadow: 2px 2px 5px rgb(100, 2, 117);
+    letter-spacing: 3px;
+    font-family: 'Sniglet', cursive;
+    
+  }
+  p{text-align: center;
+  margin: 0 auto;
+   color: rgb(155, 57, 197);
+    font-family: 'Short Stack', cursive;
+    font-size: 20px;
+    line-height: 1.5; 
+     letter-spacing: 0.3ch;
+     border: 3px solid #333333;
+    border-radius: 12% 16% 5% 10%;
+    box-shadow: 0px 5px 0px #dedede;
+    display: block;
+    width: 90%;
+    height: 20%;
+    padding: 30px 5px;
+    background-color: #f2d2f9;
+    }
+
+  body {
+    background-image: url("https://64.media.tumblr.com/ce8b70a5781a7cee18fce88e7452aafe/tumblr_pbqwer7ULs1we9f2ro1_r3_640.gifv");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+ 
+  img{
+    box-shadow: 0px 5px 0px #dedede;
+    border: 3px solid #333333;
+    border-radius: 8%;
+  }
+  img:hover{
+    transform: scale(1.5);
+transition: .8s ease-in-out;
+}
+  li {
+    display: inline;
+    float: left;
+}
+
+a {
+    display: block;
+    padding: 8px;
+
+}
+

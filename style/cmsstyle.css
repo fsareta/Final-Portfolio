@@ -1,0 +1,34 @@
+.greenback{background-color: green;}
+.redback{background-color: red;}
+.yellowback{background-color: yellow;}
+.whiteback{background-color: white;}
+
+
+.bluetext{color: blue;}
+.pinktext{color: pink;}
+.purpletext{color:purple;}
+.blacktext{color: black;}
+
+.blogarea p{
+    width: 40%;
+    height: 50%;
+    border: none;
+    border-radius: 0%;
+    padding: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
+.blogarea p:first-child{
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.blogarea p:nth-child(2){
+font-size: 14px;
+    font-style: italic;
+}

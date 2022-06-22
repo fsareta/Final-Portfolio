@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/cmsstyle.css">
+    <title>CMS Project</title>
+    <style>
+        table {
+            display: block;
+            margin: 0 auto;
+            border: 3px solid black;
+            border-radius: 4%;
+            width: 45%;
+            padding: 30px;
+            background-color: rgb(226, 177, 254);
+        }
+
+        p {
+            display: block;
+            width: 50%;
+            margin: 0 auto;
+            border: 1px solid rgb(243, 238, 238);
+            border-radius: 4%;
+            width: 45%;
+            padding: 30px;
+            background-color: rgb(43, 7, 63);
+            text-align: center;
+
+        }
+
+        .date {
+            background-color: rgb(79, 3, 79);
+            color: white;
+            font-style: italic;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+        img{
+            display:block;
+            height: 250px;
+            width:350px;
+            border: 6px solid white;
+            margin: 20px auto;
+        }
+
+        .blogarea{
+            margin-bottom: 20px;
+            padding: 3px;
+        }
+
+     
+    </style>
+</head>
+
+<body>
+
+    <h1>CMS Project</h1>
+    <div class="Nav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="myprojects.html">My Personal Project</a></li>
+                <li><a href="cmsproject.html">CMS Project</a></li>
+                <li><a href="https://fsareta.github.io/Unas-Blog/">My Blog</a></li>
+                <li><a href="https://github.com/fsareta">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/faaiuga-areta-1536131bb/">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h2>Create a Blog Post</h2>
+    <form action=""></form>
+    <table>
+        <tr>
+            <td class="firstrow"><label for="title">Title:</label> <textarea name="entertitle" id="titletext" cols="30"
+                    rows="1"></textarea> <label for="date">Date:</label><input type="date"></td>
+        </tr>
+
+        <tr style="height: 60px;">
+            <td class="secondrow"><textarea name="userinput" id="textarea" cols="70" rows="20">
+        </textarea>
+
+            </td>
+        </tr>
+        <tr>
+            <td class="thirdrow"><label for="backgroundcolor">Choose a background color:</label>
+                <select name="backcolors" id="bckcolors">
+                    <option class="greenback" value="green">Green</option>
+                    <option class="redback" value="red">Red</option>
+                    <option class="yellowback" value="yellow">Yellow</option>
+                    <option class="whiteback" value="white">White</option>
+                </select>
+                <label for="textcolor">Choose a text color:</label>
+                <select onchange="this.className=this.options[this.selectedIndex].className" name="colors" id="txtcolors">
+                    <option class="bluetext" value="blue">Blue</option>
+                    <option class="pinktext" value="pink">Pink</option>
+                    <option class="purpletext" value="purple">Purple</option>
+                    <option class="blacktext" value="black">Black</option>
+                </select>
+                <input id="btnDisplay" type="submit">
+            </td>
+        </tr>
+    </table>
+    <div>
+        <h2>Blog Post:</h2>
+<div id="blogposts"> <div class="blogarea"></div></div>
+       
+
+
+        <h2>My journey on creating this:</h2>
+        <p style="border-radius: 6px;">Learning javascript is hard for me. The syntax is a lot different than html and
+            css.
+            I had to rewatch some lectures because I thought I knew the right codes but when I tried to click the submit
+            button,
+            nothing was happening.
+             And most of it was as simple as not referencing the correct id name or forgetting to call my functions. I'm still
+            struggling to figure out how to
+            display the title, the blog post, and date all together as one post.</p>
+            <h2>Working on color changes</h2>
+            <p>Working on changing the colors of the background and text now. As you can see from this photo below,
+                the entire div is green but I only want the blog post background to be green...
+            </p>
+            <img class="greenpic" src="images/bckgrndcolorprob.png" alt="green background problem">
+            <p>I watched the bonus lecture for the cms project to help me fix some issues I couldn't figure out. The code to create this 
+                was very complex but interesting to see how things were connecting to each other.
+            </p>
+            <h2>Unsolved problems</h2>
+            <p>Even though I was able to display the title, date, and content, it displayed as 3 separate paragraphs. I also 
+                couldn't figure out how to change the background of the blog post instead of the entire div. And the change font color isn't working either...
+            </p>
+    </div>
+
+    </form>
+
+
+</body>
+<script src="script/script.js"></script>
+
+</html>
